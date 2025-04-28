@@ -12,7 +12,8 @@
 <body>
     <header>
 
-        <nav>
+        <button id="menu-toggle">☰</button>
+        <nav id="menu">
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
@@ -119,6 +120,13 @@
 
     </main>
 
-</body>
-
-</html>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+      
+        menuToggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+        });
+      </script>
+      </body>
+      </html>
