@@ -109,8 +109,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: justify;
     background: linear-gradient(to bottom,#003e91 0%,#002063 35%, #2d37c0 100%);
-    padding: 5rem 10vw;
+    padding: 10rem 20vw;
     gap: 60px;
     font-size: 29px;
     width: 100%;
@@ -123,7 +124,7 @@ body {
     align-items: center;
     gap: 100px;
     min-height: 100vh;
-    padding: 60px;
+    
 }
 
 .habilidades h2 {
@@ -297,6 +298,7 @@ body {
     }
 
     .habilidades {
+        padding: 5rem 10vw;
         font-size: 16px;
     }
     .habilidaes h2 {
