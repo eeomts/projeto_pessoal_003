@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-/* Header */
+
 header {
-    background-color: #161414;
+    background-color: #002063;
     padding: 30px 0;
     position: fixed;
     top: 0;
@@ -15,7 +15,7 @@ header {
     z-index: 999;
 }
 
-/* Navegação */
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -23,12 +23,12 @@ nav ul {
     align-items: center;  
 }
 nav ul li {
-    margin: 0 40px;   /* Maior espaçamento entre os itens */
+    margin: 0 40px;   
 }
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 28px; /* Aumentei ainda mais o tamanho da fonte */
+    font-size: 28px; 
     font-weight: bold;
     padding: 15px 25px;
     transition: color 0.3s ease;
@@ -37,36 +37,37 @@ nav ul li a:hover {
     color: #48565c;
 }
 
-/* Corpo */
+
 body {
     font-family: 'Poppins', sans-serif;
-    color: #e0e0e0;
-    background-color: #161414;
-    font-size: 22px; /* Aumentei o tamanho da fonte base */
+    color: #000000;
+    background-color: #fffbf0;
+    font-size: 22px; 
 }
 
-/* Seção Início */
+
 .inicio {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to bottom, #00000000 0%, #222222fd 35%, #444444 100%), url('imgs/fundoimagem.jpg');
+    background: linear-gradient(to bottom, #a8ceff10 0%, #4a56cad2 40%, #002063 100%), url('imgs/fundoimagem_blue1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     padding: 0 5vw; 
     font-size: 35px;
+    color: rgb(0, 0, 36);
 }
 
-/* Seção Sobre */
+
 .sobre {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: justify;
-    background: linear-gradient(to top, #000000 0%, #222222 50%, #444444 100%);
+    background: linear-gradient(to top, #003e91 0%, #002063 35%, #002063 100%);
     min-width: 100%;
     min-height: 100vh;
     padding: 10rem 20vw; 
@@ -76,16 +77,16 @@ body {
 
 .sobre h2 {
     text-align: center;
-    color: white;
-    font-size: 50px; /* Aumentei bastante o tamanho do título */
+    color: rgb(2, 0, 32);
+    font-size: 50px; 
 }
 
-/* Seção Habilidades */
+
 .habilidades {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to bottom, #000000 25%, #222222d2 60%, #444444 100%);
+    background: linear-gradient(to bottom,#003e91 0%,#002063 35%, #2d37c0a9 100%);
     padding: 5rem 10vw;
     gap: 60px;
     font-size: 29px;
@@ -103,8 +104,8 @@ body {
 
 .habilidades h2 {
     text-align: center;
-    color: white;
-    font-size: 50px; /* Aumentei bastante o tamanho do título */
+    color: rgb(0, 8, 34);
+    font-size: 50px; 
 }
 
 .container_habilidades_lista ul {
@@ -115,15 +116,15 @@ body {
     gap: 60px;
 }
 
-/* Seção Projetos */
+
 .projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-width: 100%;
-    background: linear-gradient(to top, #000000 0%, #222222 50%, #444444 100%);
-    padding: 12rem 10vw; /* Espaçamento maior e ajustável */
+    background: linear-gradient(to top,#003e91 0%, #002063 35%, #2d37c0a9 100%);
+    padding: 12rem 10vw; 
     gap: 60px;
 }
 
@@ -139,7 +140,7 @@ body {
 .projetos .projetos_h2 {
     text-align: center;
     color: white;
-    font-size: 45px; /* Maior tamanho para o título */
+    font-size: 45px; 
 }
 
 .projetos .link_projetos { 
@@ -147,39 +148,41 @@ body {
     height: 200px;
     background-color: rgba(190, 190, 190, 0.185);
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.26);
+    box-shadow: 0 4px 15px rgba(129, 129, 129, 0.26);
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 28px; /* Aumentei o tamanho da fonte */
+    font-size: 28px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     text-align: center;
-    color: black;
+    color: rgb(12, 0, 54);
 }
 
 .projetos .link_projetos:hover { 
-    transform: translateY(-10px) scale(1.1); /* Efeito de hover mais pronunciado */
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px) scale(1.1); 
+    box-shadow: 0 12px 25px rgba(216, 216, 216, 0.3);
+    
 }  
 
-/* Seção Contato */
+
 .contato {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-width: 100%;
-    background-color: black;
+    background-color: #002063;
     text-align: center;
     padding: 5rem 2rem;
     font-size: 29px;
+    color: white
 }
 
 .contato h3 {
     color: white;   
-    font-size: 50px; /* Aumentei bastante o tamanho do título */
+    font-size: 50px; 
 }
 
 .contato ul {
@@ -192,7 +195,7 @@ body {
 }
 
 .link_social {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 4px 15px #002063;
     display: flex;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -200,5 +203,5 @@ body {
 
 .link_social:hover { 
     transform: translateY(-10px) scale(1.1);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 25px #002063;
 }
