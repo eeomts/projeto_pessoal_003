@@ -3,15 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Header */
 header {
     background-color: #161414;
-    padding: 15px 0;
+    padding: 30px 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
 }
+
+/* Navegação */
 nav ul {
     display: flex;
     justify-content: center;
@@ -19,27 +23,29 @@ nav ul {
     align-items: center;  
 }
 nav ul li {
-    margin: 0 20px;   
+    margin: 0 40px;   /* Maior espaçamento entre os itens */
 }
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 28px; /* Aumentei ainda mais o tamanho da fonte */
     font-weight: bold;
+    padding: 15px 25px;
     transition: color 0.3s ease;
 }
 nav ul li a:hover {
     color: #48565c;
 }
 
-
-
+/* Corpo */
 body {
-    font-family: 'Poppins', sans-serif; color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
     background-color: #161414;
+    font-size: 22px; /* Aumentei o tamanho da fonte base */
 }
 
-
+/* Seção Início */
 .inicio {
     display: flex;
     justify-content: center;
@@ -50,9 +56,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+    padding: 0 5vw; 
+    font-size: 35px;
 }
 
-
+/* Seção Sobre */
 .sobre {
     display: flex;
     flex-direction: column;
@@ -61,81 +69,90 @@ body {
     background: linear-gradient(to top, #000000 0%, #222222 50%, #444444 100%);
     min-width: 100%;
     min-height: 100vh;
-    padding-top: 1px;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding: 10rem 20vw; 
+    font-size: 29px;
+    
 }
+
+.sobre h2 {
+    text-align: center;
+    color: white;
+    font-size: 50px; /* Aumentei bastante o tamanho do título */
+}
+
+/* Seção Habilidades */
 .habilidades {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* gap : 2px; */
     background: linear-gradient(to bottom, #000000 25%, #222222d2 60%, #444444 100%);
-    padding-top: 30px;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding: 5rem 10vw;
+    gap: 60px;
+    font-size: 29px;
 }
 
-
 .container_habilidades {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px ;
+    gap: 100px;
     height: 100vh;
-    padding: 40px;
+    padding: 60px;
 }
 
 .habilidades h2 {
-text-align: center;
-color: white;
+    text-align: center;
+    color: white;
+    font-size: 50px; /* Aumentei bastante o tamanho do título */
 }
 
 .container_habilidades_lista ul {
-display: flex;
-list-style: none;
-justify-content: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
     align-items: center; 
-    gap: 30px;
-
-
+    gap: 60px;
 }
+
+/* Seção Projetos */
 .projetos {
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-width: 100%;
-    max-height: 140vh;
     background: linear-gradient(to top, #000000 0%, #222222 50%, #444444 100%);
-    padding: 10rem 10rem;
-    gap: 20px;
-    
+    padding: 12rem 10vw; /* Espaçamento maior e ajustável */
+    gap: 60px;
 }
- .container_projetos {
-    display:flex;
+
+.container_projetos {
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 80px;
     height: 80vh;
-    padding: 40px;
+    padding: 60px;
 }
-.projetos .projetos_h2{
+
+.projetos .projetos_h2 {
     text-align: center;
     color: white;
+    font-size: 45px; /* Maior tamanho para o título */
 }
+
 .projetos .link_projetos { 
-    width: 170px;
-    height: 140px;
+    width: 250px;
+    height: 200px;
     background-color: rgba(190, 190, 190, 0.185);
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.26);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.26);
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 28px; /* Aumentei o tamanho da fonte */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     text-align: center;
@@ -143,39 +160,45 @@ justify-content: center;
 }
 
 .projetos .link_projetos:hover { 
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px) scale(1.1); /* Efeito de hover mais pronunciado */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }  
 
-
-.contato{
-    display: flexbox;
+/* Seção Contato */
+.contato {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     min-width: 100%;
-    max-height: 120vh;
     background-color: black;
     text-align: center;
-    padding-bottom: 10rem;
+    padding: 5rem 2rem;
+    font-size: 29px;
+}
+
+.contato h3 {
+    color: white;   
+    font-size: 50px; /* Aumentei bastante o tamanho do título */
 }
 
 .contato ul {
     display: flex;
     list-style: none;
     justify-content: center;
-        align-items: center; 
-        gap: 40px;
-        padding-top: 45px;
+    align-items: center; 
+    gap: 80px;
+    padding-top: 60px;
 }
 
 .link_social {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.26);
     display: flex;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .link_social:hover { 
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-}  
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
