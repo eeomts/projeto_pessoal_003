@@ -63,7 +63,7 @@ nav ul li a:hover {
 /* Body */
 body {
     font-family: 'Poppins', sans-serif;
-    color: #000000;
+    color: #ffffff;
     background-color: #fffbf0;
     font-size: 22px; 
     overflow-x: hidden;
@@ -81,8 +81,8 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     padding: 0 5vw; 
-    font-size: 35px;
-    color: rgb(0, 0, 36);
+    font-size: 50px;
+    color: rgb(255, 255, 255);
 }
 
 /* Sobre */
@@ -100,7 +100,7 @@ body {
 
 .sobre h2 {
     text-align: center;
-    color: rgb(2, 0, 32);
+    color: rgb(255, 255, 255);
     font-size: 50px; 
 }
 
@@ -128,7 +128,7 @@ body {
 
 .habilidades h2 {
     text-align: center;
-    color: rgb(0, 8, 34);
+    color: rgb(255, 255, 255);
     font-size: 50px; 
 }
 
@@ -174,7 +174,7 @@ body {
 .projetos .link_projetos { 
     width: 250px;
     height: 200px;
-    background-color: rgba(190, 190, 190, 0.185);
+    background-color: rgba(255, 255, 255, 0.356);
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(129, 129, 129, 0.26);
     display: flex;
@@ -223,7 +223,7 @@ body {
 }
 
 .link_social {
-    box-shadow: 0 4px 15px #001f63e8;
+    box-shadow: 0 4px 15px #001f63;
     display: flex;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -284,7 +284,7 @@ body {
     nav ul li {
         margin: 15px 0;
     }
-}
+
 
     .inicio {
         font-size: 25px;
@@ -293,17 +293,22 @@ body {
 
     .sobre {
         padding: 5rem 10vw;
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .habilidades {
-        padding: 4rem 5vw;
-        font-size: 24px;
+        font-size: 16px;
+    }
+    .habilidaes h2 {
+        font-size: 40px;
     }
 
     .container_habilidades {
         gap: 60px;
         min-height: auto;
+    }
+    .projetos_h2{
+        font-size: 40px;
     }
 
     .container_projetos {
@@ -312,6 +317,8 @@ body {
         gap: 40px;
     }
 
+    
+
     .projetos .link_projetos {
         width: 80%;
         height: 150px;
@@ -319,6 +326,7 @@ body {
 
     .contato {
         padding: 3rem 1rem;
+        font-size: 16px;
     }
 
     .contato h3 {
@@ -328,4 +336,4 @@ body {
     .contato ul {
         gap: 40px;
     }
-
+}
